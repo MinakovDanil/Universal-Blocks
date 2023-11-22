@@ -1,0 +1,32 @@
+/*!
+Theme Name: universalblocks
+Theme URI: Danylo Minakov
+Author: 
+Author URI: 
+Version: 1.0.0
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	background: #e5e5e5;
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
+}
+
+.main {
+	padding: 80px 0px;
+}
+
+.footer {
+	width: 100%;
+	height: 100px;
+	background: #949494;
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.04);
+}
