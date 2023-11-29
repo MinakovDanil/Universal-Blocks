@@ -10,8 +10,14 @@
 
 .lib-btn {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: var(--lib-color-primary);
     color: #FFF;
@@ -23,6 +29,8 @@
     border-radius: 4px;
     padding: 23.5px 20px;
     cursor: pointer;
+    -webkit-transition: var(--lib-trans);
+    -o-transition: var(--lib-trans);
     transition: var(--lib-trans);
     text-decoration: none;
     outline: none;
@@ -90,7 +98,11 @@
 
 .lib-circle__item {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -217,6 +229,9 @@
 .items-4 .lib-circle__item:nth-child(2),
 .items-4 .lib-circle__item:nth-child(4) {
     right: -340px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 
@@ -261,6 +276,9 @@
 
 .items-5 .lib-circle__item:nth-child(2),
 .items-5 .lib-circle__item:nth-child(4) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 
@@ -293,6 +311,9 @@
 .items-5 .lib-circle__item:nth-child(5) {
     top: -165px;
     left: calc(50% - 143px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
 }
@@ -320,6 +341,9 @@
 .items-6 .lib-circle__item:nth-child(2),
 .items-6 .lib-circle__item:nth-child(4),
 .items-6 .lib-circle__item:nth-child(6) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 
@@ -366,6 +390,9 @@
 .items-7 .lib-circle__item:nth-child(2),
 .items-7 .lib-circle__item:nth-child(4),
 .items-7 .lib-circle__item:nth-child(6) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 
@@ -405,6 +432,9 @@
 .items-7 .lib-circle__item:nth-child(7) {
     top: -150px;
     left: calc(50% - 143px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
 }
@@ -428,6 +458,9 @@
 .items-8 .lib-circle__item:nth-child(4),
 .items-8 .lib-circle__item:nth-child(6),
 .items-8 .lib-circle__item:nth-child(8) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 

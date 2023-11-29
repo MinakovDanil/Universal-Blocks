@@ -886,8 +886,13 @@
     .lib-circle__item {
         width: 100%;
         position: static;
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
         flex-direction: row-reverse !important;
         text-align: left !important;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
         border-radius: 4px;
         background: #F2F6FC;
