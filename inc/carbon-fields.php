@@ -22,7 +22,7 @@ function universalblocks_carbon()
         ->set_max(8)
         ->add_fields(array(
             Field::make('text', 'title', __('Title'))->set_width(40),
-            Field::make('text', 'text', __('Text'))->set_width(40),
+            Field::make('textarea', 'text', __('Text'))->set_width(40),
             Field::make('image', 'icon', __('Icon'))->set_width(20),
         )),
     ));

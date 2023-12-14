@@ -16,16 +16,16 @@
                 - icon-square border
             -->
 
-            <div class="lib-circle-wrapper icon-circle border">
-                <div class="lib-circle-img">
-                    <?php echo wp_get_attachment_image(carbon_get_post_meta(get_the_ID(), 'lib_circle_image'), 'full'); ?>
-                </div>
+            <?php $circle_block_items = carbon_get_post_meta(get_the_ID(), 'lib_circle_items'); 
+            if ($circle_block_items) : ?>
 
+                <div class="lib-circle-wrapper icon-circle border items-<?php echo count($circle_block_items); ?>">
+                    <div class="lib-circle-img">
+                        <?php echo wp_get_attachment_image(carbon_get_post_meta(get_the_ID(), 'lib_circle_image'), 'full'); ?>
+                    </div>
 
-                <div class="lib-circle-items">
-                    <?php $circle_block_items = carbon_get_post_meta(get_the_ID(), 'lib_circle_items'); 
-
-                        if ($circle_block_items) :
+                    <div class="lib-circle-items">
+                        <?php if ($circle_block_items) :
                             foreach ($circle_block_items as $item) : ?>
                                 <div class="lib-circle__item">
                                     <div class="lib-circle__item-content">
@@ -36,11 +36,12 @@
                                         <?php echo wp_get_attachment_image($item['icon'], 'full'); ?>
                                     </div>
                                 </div>
-                        <?php endforeach;
-                    endif; ?>
+                            <?php endforeach;
+                        endif; ?>
+                    </div>
                 </div>
-
-            </div>
+                
+            <?php endif; ?>
 
             <button type="button" class="lib-btn"><?php echo carbon_get_post_meta(get_the_ID(), 'lib_circle_btn_text'); ?></button>
         </div>
