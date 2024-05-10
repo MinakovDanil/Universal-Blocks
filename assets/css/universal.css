@@ -7,6 +7,9 @@
     --lib-trans: .3s ease;
 }
 
+body {
+    font-family: var(--lib-font);
+}
 
 .lib-btn {
     width: 100%;
@@ -27,7 +30,7 @@
     line-height: 120%;
     border: 1px solid transparent;
     border-radius: 4px;
-    padding: 23.5px 20px;
+    padding: 22.1px 20px 23.1px;
     cursor: pointer;
     -webkit-transition: var(--lib-trans);
     -o-transition: var(--lib-trans);
@@ -506,3 +509,351 @@
 }
 
 /* Circle block - END*/
+
+
+.lib-container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lib-subtitle {
+    text-align: center;
+    line-height: 160%;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+
+/* How It Works - START*/
+.lib-how {
+    padding: 80px 0px;
+}
+
+.lib-how .lib-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.lib-how .lib-btn {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+}
+
+.lib-how-wrapper {
+    margin-top: 32px;
+}
+
+.lib-how-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.lib-how-item:last-child {
+    margin-bottom: 0;
+}
+
+.lib-how-item:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.lib-how-item-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.lib-how-item-content {
+    width: 504px;
+}
+
+.lib-how-item:first-child .lib-how-item-content {
+    width: 518px;
+}
+
+.lib-how-item__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 115%;
+    font-family: var(--lib-second-font);
+    max-width: 243px;
+}
+
+.lib-how-item__text {
+    margin-top: 16px;
+}
+
+.lib-how-item__text,
+.lib-how-item__text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.lib-how-item__number {
+    color: #fff;
+    -webkit-text-stroke: 1px var(--lib-border-color);
+    font-family: var(--lib-second-font);
+    font-size: 160px;
+    font-weight: 700;
+    line-height: 87.5%;
+    margin-right: 32px;
+    margin-top: -16px;
+}
+
+.lib-how-item__img img {
+    max-width: 430px;
+    height: auto;
+}
+
+/* How It Works - END*/
+
+
+/* FAQ - START*/
+.lib-faq-container {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.lib-faq {
+    padding: 80px 0px;
+}
+
+.lib-faq .lib-title {
+    text-align: center;
+}
+
+.lib-faq-items {
+    margin-top: 40px;
+}
+
+.lib-faq-item {
+    border-radius: 8px;
+    background: #FFF;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(39, 39, 39, 0.06);
+    box-shadow: 0px 0px 30px 0px rgba(39, 39, 39, 0.06);
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.lib-faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.lib-faq-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 8px 0px 0px 8px;
+    border-left: 8px solid var(--lib-border-color);
+}
+
+.lib-faq-item summary {
+    cursor: pointer;
+    padding: 24px 68px 24px 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+
+.lib-faq-item summary::after {
+    content: '';
+    width: 18px;
+    height: 9px;
+    background-image: url('data:image/svg+xml,<svg viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1L9 8L1 1" stroke="%23F07440" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 32px;
+    right: 26px;
+    -webkit-transition: var(--lib-trans);
+    -o-transition: var(--lib-trans);
+    transition: var(--lib-trans);
+}
+
+.lib-faq-item[open] summary::after {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg)
+}
+
+.lib-faq-item summary h3 {
+    color: var(--lib-text-color);
+    font-family: var(--lib-second-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 115%;
+}
+
+.lib-faq-text {
+    padding: 0 68px 24px 32px;
+    margin-top: -10px;
+    color: var(--lib-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+/* FAQ - END*/
+
+
+
+/* Cost - START */
+.lib-cost {
+    font-family: var(--lib-second-font);
+}
+
+.lib-cost .lib-title {
+    text-align: center;
+}
+
+.lib-cost-wrapper {
+    margin-top: 40px;
+}
+
+.lib-cost-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.lib-cost-tab {
+    width: 300px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #1F2428;
+    position: relative;
+    cursor: pointer;
+}
+
+.lib-cost-tab.active::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -1.5px;
+    left: 0;
+    background: var(--lib-color-primary);
+}
+
+.lib-cost-tab h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 155%;
+}
+
+.lib-cost-tab.active h3 {
+    color: var(--lib-color-primary);
+}
+
+.lib-tab-content {
+    margin-top: 40px;
+}
+
+.lib-cost-tab-item {
+    display: none;
+}
+
+.lib-cost-tab-item:first-child {
+    display: block;
+}
+
+.lib-cost-table {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+}
+
+.lib-mobile-table {
+    display: none;
+}
+
+.lib-transit-table {
+    width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lib-cost-table tr:nth-child(odd) {
+    background: #F2F6FC;
+}
+
+.lib-cost-table tr:nth-child(even) {
+    background: #fff;
+}
+
+.lib-cost-table tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.lib-cost-table tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.lib-cost-table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.lib-cost-table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.lib-cost-table tr th,
+.lib-cost-table tr td {
+    border: none;
+}
+
+.lib-cost-table tr th {
+    padding: 21px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.lib-cost-table tr td {
+    font-weight: 600;
+    padding: 21px 24px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.cost-under-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142%;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* Cost - END */

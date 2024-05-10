@@ -969,3 +969,368 @@
 }
 
 /* Circle block - END */
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+    /* How It Works - START */
+    .lib-container {
+        width: 1080px;
+    }
+
+    .lib-how-item__img img {
+        max-width: 400px;
+    }
+
+    .lib-how-item__title {
+        font-size: 32px;
+    }
+
+    .lib-how-item__number {
+        font-size: 140px;
+        line-height: 100%;
+        margin-top: -22px;
+    }
+
+    .lib-how-item:first-child .lib-how-item-content,
+    .lib-how-item-content {
+        width: 435px;
+    }
+
+    .lib-how-item {
+        margin-bottom: 40px;
+    }
+
+    /* How It Works - END */
+}
+
+@media screen and (max-width: 1124px) {
+
+    /* How It Works - START */
+    .lib-container {
+        width: 904px;
+    }
+
+    .lib-how-item__img img {
+        max-width: 340px;
+    }
+
+    .lib-how-item:first-child .lib-how-item-content,
+    .lib-how-item-content {
+        width: 370px;
+    }
+
+    .lib-how-item__number {
+        margin-right: 22px;
+    }
+
+    .lib-how-item {
+        margin-bottom: 80px;
+    }
+
+    /* How It Works - END */
+
+    /* Cost - START */
+    .lib-cost-tab {
+        width: 240px;
+    }
+
+    /* Cost - END */
+}
+
+
+@media screen and (max-width: 934px) {
+
+    /* How It Works - START */
+    .lib-container {
+        width: 704px;
+    }
+
+    .lib-subtitle {
+        font-size: 18px;
+    }
+
+    .lib-how-item,
+    .lib-how-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .lib-how-item__img {
+        text-align: center;
+    }
+
+    .lib-how-item__img img {
+        max-width: 400px;
+    }
+
+    .lib-how-item:first-child .lib-how-item-content,
+    .lib-how-item-content {
+        width: 100%;
+    }
+
+    .lib-how-item-box {
+        margin-top: 40px;
+    }
+
+    .lib-how-item__title {
+        max-width: 100%;
+    }
+
+    .lib-how-item__number {
+        margin-right: 32px;
+    }
+
+    .lib-how .lib-btn {
+        margin-top: 60px;
+    }
+
+    /* How It Works - END */
+
+
+    /* Cost - START */
+    .lib-transit-table {
+        width: 520px;
+    }
+
+    .cost-under-text {
+        max-width: 455px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Cost - END */
+}
+
+@media screen and (max-width: 734px) {
+
+    /* How It Works - START */
+    .lib-container {
+        width: 432px;
+    }
+
+    .lib-how {
+        padding: 60px 0;
+    }
+
+    .lib-subtitle {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .lib-how-item__img img {
+        max-width: 340px;
+    }
+
+    .lib-how-item-box {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .lib-how-item__number {
+        font-size: 120px;
+        margin-right: 0;
+        margin-bottom: 14px;
+        margin-top: 0;
+    }
+
+    .lib-how-item__title {
+        font-size: 28px;
+    }
+
+    .lib-how-item__text {
+        margin-top: 24px;
+    }
+
+    .lib-how-item {
+        margin-bottom: 60px;
+    }
+
+    .lib-how .lib-btn {
+        margin-top: 40px;
+    }
+
+    /* How It Works - END */
+
+
+
+    /* FAQ - START*/
+    .lib-faq-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .lib-faq {
+        padding: 60px 0;
+    }
+
+    .lib-faq-item summary {
+        padding: 24px 52px 24px 24px;
+    }
+
+    .lib-faq-text {
+        padding: 0 52px 24px 24px;
+    }
+
+    .lib-faq-item summary::after {
+        right: 16px;
+        top: 28px;
+    }
+
+    /* FAQ - END*/
+
+    /* Cost - START */
+    .lib-cost-table {
+        display: none;
+    }
+
+    .lib-mobile-table {
+        display: block;
+    }
+
+    .lib-cost-tab {
+        width: 190px;
+        padding-bottom: 12px;
+    }
+
+    .lib-cost-wrapper,
+    .lib-tab-content {
+        margin-top: 32px;
+    }
+
+    .lib-mobile-table-wrapper:nth-child(odd) {
+        background: #F2F6FC;
+    }
+
+    .lib-mobile-table-wrapper {
+        padding: 20px 0;
+    }
+
+    .lib-mobile-table__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .lib-mobile-table__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .lib-mobile-table-title,
+    .lib-mobile-table-text {
+        width: 50%;
+        padding-left: 32px;
+        line-height: 150%;
+        font-size: 16px;
+    }
+
+    .lib-mobile-table-title {
+        font-weight: 700;
+    }
+
+    .lib-mobile-table-text {
+        font-weight: 600;
+    }
+
+    .lib-transit-table {
+        width: 100%;
+    }
+
+    .cost-under-text {
+        max-width: 355px;
+    }
+
+    /* Cost - END */
+}
+
+@media screen and (max-width: 462px) {
+
+    /* How It Works - START */
+    .lib-container {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .lib-how-item__img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .lib-how-item__number {
+        font-size: 100px;
+    }
+
+    .lib-how-item__title {
+        font-size: 24px;
+    }
+
+    .lib-how-item__text,
+    .lib-how-item__text p {
+        font-size: 14px;
+    }
+
+    .lib-how-item__text {
+        margin-top: 16px;
+    }
+
+    .lib-how-item {
+        margin-bottom: 40px;
+    }
+
+    .lib-how-item-box {
+        margin-top: 10px;
+    }
+
+    /* How It Works - END */
+
+
+    /* FAQ - START*/
+
+    .lib-faq-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .lib-faq-items {
+        margin-top: 32px;
+    }
+
+    .lib-faq-text {
+        font-size: 14px;
+        line-height: 170%;
+    }
+
+    /* FAQ - END*/
+
+
+
+    /* Cost - END */
+    .lib-cost-tab {
+        width: 50%;
+    }
+
+    .lib-cost-tab h3 {
+        font-size: 16px;
+    }
+
+    .lib-cost-wrapper,
+    .lib-tab-content {
+        margin-top: 24px;
+    }
+
+    .lib-mobile-table-title,
+    .lib-mobile-table-text {
+        padding-left: 16px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .cost-under-text {
+        margin-top: 14px;
+        text-align: left;
+    }
+
+    /* Cost - START */
+}
