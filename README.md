@@ -15,7 +15,7 @@ Create a new page and select it as a static home page in the Reading settings.
 
 4. **Content Filling:**  
 Go to the WordPress admin panel, open the created home page, and fill in the fields with content.
-You can use content examples from the site [vtslogistics.net](vtslogistics.net).
+You can use content examples from the site [vtslogistics.net](https://vtslogistics.net).
 
 
 ## How to use the blocks
